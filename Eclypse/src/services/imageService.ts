@@ -1,6 +1,6 @@
 export const fetchImages = async (): Promise<string[]> => {
   try {
-    const response = await fetch('http://localhost:5000/api/images');
+    const response = await fetch('https://eclypse-jnvt.onrender.com/api/images');
     const data = await response.json();
     if (data.data && Array.isArray(data.data)) {
       return data.data;
