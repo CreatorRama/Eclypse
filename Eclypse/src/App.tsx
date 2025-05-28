@@ -3,7 +3,8 @@ import { CheckoutPage } from './pages/CheckoutPage';
 import { fetchImages } from './services/imageService';
 import { calculateTotal } from './utils/calculations';
 import { CartItem, ShippingForm, Page } from './types';
-import { HomePage } from './pages/homepage';
+import { HomePage } from './pages/Home';
+
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState<Page>('home');
