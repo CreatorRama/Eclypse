@@ -19,27 +19,9 @@ const images = [
       "/images/Frame 19.svg"
 ];
 
-const customers = [
-  {
-    id: 1,
-    name: "Random Woman",
-    review: "Understated, but unforgettable. It feels like it was made for me",
-    rating: 5,
-    avatar: "/api/placeholder/40/40"
-  },
-  {
-    id: 2,
-    name: "Sarah Johnson",
-    review: "The quality is exceptional and the fit is perfect.",
-    rating: 5,
-    avatar: "/api/placeholder/40/40"
-  }
-];
 
 
-// API Routes
 
-// GET /api/products - Get all products
 app.get('/api/images', (req, res) => {
   res.json({
     success: true,
