@@ -31,17 +31,26 @@ A modern, minimalist e-commerce platform for luxury fashion, built with React, T
 ```
 eclypse-ecommerce/
 ├── frontend/
-│   ├── src/
-|   |   ├──input.css
-│   │   ├── App.tsx
-│   │   └── main.jsx
-│   ├── public/
-│   │   └── images/
-│   ├── package.json
-│   ├── vite.config.ts
-│   └── tailwind.config.js
-│   └── postcss.config.js
-│   └── tsconfig.json
+│   src/
+├── types/
+│   └── index.ts          # All TypeScript interfaces
+├── utils/
+│   └── calculations.ts   # Business logic for calculations
+├── services/
+│   └── imageService.ts   # API calls and external services
+├── components/           # Reusable UI components
+│   ├── Header.tsx
+│   ├── HeroSection.tsx
+│   ├── ImageGrid.tsx
+│   ├── ProductSection.tsx
+│   ├── CustomerReview.tsx
+│   ├── Footer.tsx
+│   ├── ShippingForm.tsx
+│   └── OrderSummary.tsx
+├── pages/               # Main page components
+│   ├── HomePage.tsx
+│   └── CheckoutPage.tsx
+└── App.tsx             # Main app component (simplified)
 ├── backend/
 │   ├── server.js
 │   ├── package.json
